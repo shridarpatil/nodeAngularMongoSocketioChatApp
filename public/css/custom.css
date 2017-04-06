@@ -1,0 +1,261 @@
+body {
+    background-color: #edeff2;
+    font-family: "Calibri", "Roboto", sans-serif;
+}
+
+.container.chat-window {
+    position: absolute;
+    /* width: calc(100% - 20px); */
+    max-width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #f8f8f8;
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+.top_menu {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px 0 15px;
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    color: #bcbdc0;
+    font-size: 20px;
+}
+
+ul.messages {
+    position: relative;
+    list-style: none;
+    padding: 20px 10px 0 10px;
+    margin: 0;
+    height: 347px;
+    overflow: scroll;
+}
+
+.bottom_wrapper {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom_wrapper .message_input_wrapper {
+    display: inline-block;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #bcbdc0;
+    width: calc(100% - 160px);
+    position: relative;
+    padding: 0 20px;
+}
+
+.bottom_wrapper .message_input_wrapper .message_input {
+    border: none;
+    height: 100%;
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    position: absolute;
+    outline-width: 0;
+    color: gray;
+}
+
+.bottom_wrapper .send_message {
+    width: 140px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50px;
+    background-color: #a3d063;
+    border: 2px solid #a3d063;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    text-align: center;
+    float: right;
+}
+
+.bottom_wrapper .send_message .text {
+    font-size: 18px;
+    font-weight: 300;
+    display: inline-block;
+    line-height: 48px;
+}
+
+.user-data {
+    padding: 49px 17px 43px 259px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.switch-room {
+    margin: 10px 38%;
+    width: 210px;
+}
+
+.loginmodal-container {
+    padding: 30px;
+    max-width: 350px;
+    width: 100% !important;
+    background-color: #F7F7F7;
+    margin: 0 auto;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    font-family: roboto;
+    margin-top: 48px;
+}
+
+.loginmodal-container h1 {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: roboto;
+}
+
+.loginmodal-container input[type=text]] {
+    height: 44px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    /* border-radius: 2px; */
+    padding: 0 8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.loginmodal-container button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.loginmodal-submit:hover {
+    /* border: 1px solid #2f5bb7; */
+    border: 0px;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    background-color: #357ae8;
+    /* background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-submit {
+    /* border: 1px solid #3079ed; */
+    border: 0px;
+    color: #fff;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    background-color: #4d90fe;
+    padding: 17px 0px;
+    font-family: roboto;
+    font-size: 14px;
+    /* background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4d90fe), to(#4787ed)); */
+}
+
+input#usr {
+    margin: 10px 0px;
+}
+
+span.err {
+    color: red;
+}
+
+button.login.loginmodal-submit.diabled-class {
+    cursor: not-allowed;
+}
+
+button.text {
+    width: 140px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50px;
+    background-color: #a3d063;
+    border: 2px solid #a3d063;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    text-align: center;
+    float: right;
+    margin-top: -48px;
+}
+
+button.text.diabled-class {
+    cursor: not-allowed;
+}
+
+li.server {
+    text-align: center;
+    color: #07c;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.mymsg p.usrname {
+    font-weight: 600;
+    color: #77aa72;
+    text-transform: capitalize;
+    font-size: 16px;
+    text-align: right;
+}
+
+li.mymsg {
+    /* background-color: #c7eafc;*/
+    border-radius: 10px;
+    width: 100%;
+    text-align: right;
+}
+
+li.mymsg div {
+    background-color: #c7eafc;
+    width: 50%;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.mymsg p.dataMessage {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: right;
+}
+
+li.others {
+    /*background-color: #ffe6cb;*/
+    width: 100%;
+    border-radius: 10px;
+    text-align: left;
+}
+
+li.others div {
+    background-color: #ffe6cb;
+    width: 50%;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.others p.usrname {
+    font-weight: 600;
+    color: #77aa72;
+    text-transform: capitalize;
+    font-size: 16px;
+    text-align: left;
+}
+
+.others p.dataMessage {
+    font-weight: 300;
+    text-align: left;
+    font-size: 18px;
+}

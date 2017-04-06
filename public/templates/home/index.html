@@ -1,0 +1,17 @@
+<form name="chatForm">
+    <div class="loginmodal-container">
+        <h1>Lets Chat</h1>
+        <br>
+        <input type="text" class="form-control username" name="username" id="usr" ng-model="user.username" placeholder="Enter Username" required>
+        <span ng-show="chatForm.username.$invalid && chatForm.username.$dirty" class="err">Username is required.</span>
+        <div class="form-group room">
+            <select class="form-control" id="sel1" ng-model="user.room" name="room" required>
+                <option value="">Select Room</option>
+                <option ng-repeat="rooms in rooms">{{rooms.roomName}}</option>
+            </select>
+            <span ng-show="chatForm.room.$invalid && chatForm.room.$dirty" class="err">Room is required.</span>
+        </div>
+        <button type="button" ng-disabled="chatForm.username.$invalid || chatForm.room.$invalid" ng-class="{'diabled-class': chatForm.username.$invalid || chatForm.room.$invalid}" class="login loginmodal-submit" ng-click="createUser()">Create User</button>
+    </div>
+</form>
+</div>

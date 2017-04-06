@@ -1,0 +1,33 @@
+<div class="col-md-4 switch-room">
+    <div class="form-group room">
+        <select class="form-control" id="sel1" ng-model="room" ng-change="changeRoom()">
+            <option value="">Change Room</option>
+            <option ng-repeat="rooms in rooms">{{rooms.roomName}}</option>
+        </select>
+    </div>
+</div>
+<div class="container chat-window">
+    <div class="top_menu">
+        <div class="title">Chat</div>
+    </div>
+    <ul class="messages"  id="chatBox">
+        <li ng-repeat="message in message" class="{{message.classes}}">
+            <div>
+                <p class="usrname">{{message.name}}</p>
+                <p class="dataMessage">{{message.message}}</p>
+            </div>
+        </li>
+    </ul>
+    <div class="bottom_wrapper clearfix">
+        <form name="chatBox">
+            <div class="message_input_wrapper">
+                <input name="message" class="message_input" ng-model="newMessage" placeholder="Type your message here..." required>
+            </div>
+            <div class="">
+                <div class="icon"></div>
+                <button type="button" class="text" ng-disabled="chatBox.message.$invalid" ng-class="{'diabled-class': chatBox.message.$invalid}" ng-click="sendMessage()">Send</button>
+            </div>
+        </form>
+    </div>
+</div>
+
