@@ -11,7 +11,7 @@ Create database with the name 'chat'
 
 ### Add Chat Room
 
-URL : <ip>:8080/postRooms
+URL : '\<ip\>':8080/postRooms <br/>
 data : {
 "roomName":"<name>"
 }
