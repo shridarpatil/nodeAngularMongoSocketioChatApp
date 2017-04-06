@@ -2,12 +2,14 @@
 ## installation
 ### npm install
 
-### Run
-node server.js
-
 ### Database
 Mongodb </br>
 Create database with the name 'chat'
+
+### Run
+node server.js
+
+
 
 ### Add Chat Room
 
